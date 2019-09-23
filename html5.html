@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- 머리말(본문 중의) -->
+        <header>
+            
+        </header>
+        <!-- 본문, 내비게이션, 본문 내용 -->
+        <div>
+            <!-- navigation : 항해지도 - 페이지 버튼들이 모여있는 곳 -->
+            <nav>
+
+            </nav>
+            <!-- section : 한가지 주제에 관한 내용을 모아두는 곳 -->
+            <section>
+                <!-- article : 기사(뉴스), 블로그 글을 담는 곳 -->
+                <article></article>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+            <!-- aside : 부수적인 정보 (광고, 연관글) -->
+            <aside>
+
+            </aside>
+        </div>
+        <!-- 맺음말: 저작권 정보, 개인보호 정책 -->
+        <footer>
+
+        </footer>
+        <style>
+            #myCanvas{
+                width: 300px;
+                height: 150px;
+            }
+        </style>
+        <canvas id="myCanvas">
+
+        </canvas>
+        <script>
+                var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
+                var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
+                ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+                
+                ctx.fillRect(25, 25, 100, 100); //채움 사각형
+                ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 95); //선 그으며 움직이기
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(260, 75);
+                ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 65);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+                </script>
+                
+                <!-- 오디오(소리) 관련 재생장치 -->
+                <audio controls>
+                    <source src="./media/audio001_crowd-cheering.mp3" type="audio/mpeg" />
+                </audio>
+
+                <!-- 비디오(영상) 관련 재생장치 -->
+                <video controls>
+                    <source src="./media/video001_big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                </video>
+    </body>
+</html>
