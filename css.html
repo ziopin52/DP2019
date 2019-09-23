@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <style>
+            b{
+                /* 요소 선택자 */
+                color: red
+            }
+            .c_name{
+                /* 클래스 선택자 */
+                color: green
+            }
+            #i_name{
+                /* 아이디 선택자 */
+                color: pink
+            }
+            #i_name2::before{
+                /* 의미없는 꾸밈 용도로 쓸 수 있음 */
+                /* 정보가 아닌 것으로 처리됨 */
+                content: "*";
+            }
+            #i_name2::after{
+                content: "*";
+            }
+            #i_name2:first-letter{
+                font-size: 60pt
+            }
+            #i_name2::first-line{
+                /* 요소의 첫번째 줄에 해당하는 내용들에 적용 */
+                /* 화면 크기에 요쇼의 모양이 변한다면 그에 따라 적용 형태가 달라짐  */
+                color: pink;
+            }
+            .con:first-child{
+                color: blue;
+            }
+            .con:last-child{
+                color: red;
+            }
+            .con:nth-child(4){
+                color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">뒤로가기</a>
+        <b>내용 1</b>
+        <div class="c_name">클래스</div>
+        <div id="i_name">아이디</div>
+        <div id="i_name2">가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자가상요소 선택자</div>
+
+        <ul>
+            <li class="con">내용1</li>
+            <li class="con">내용2</li>
+            <li class="con">내용3</li>
+            <li class="con">내용4</li>
+            <li class="con">내용4.1</li>
+            <li class="con">내용5</li>
+        </ul>
+        <style>
+        /* :link 기본, :visited 방문함, :hover 마우스 올림
+        :active 활성화 됨 :focus 포커스 됨 */
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: goldenrod
+        }
+        a:focus{
+            color: pink;
+        }
+        </style>
+        <a href="#">링크 버튼</a>
+    </body>
+</html>

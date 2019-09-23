@@ -142,6 +142,34 @@
         <!-- form 양식지 -->
         <form>
             <input type="text" placeholder="아이디를 입력해 주세요">
+            <input type="password" placeholder="패스워드를 입력해 주세요">
+            <!-- radio는 name이 중요함 -->
+            <input type="radio" name="bt1" value="1" />
+            <input type="radio" name="bt1" value="2" />
+            <input type="radio" name="bt1" value="3" />
+
+            <input type="radio" name="bt2" value="1" />
+            <input type="radio" name="bt2" value="2" />
+            <input type="radio" name="bt2" value="3" />
+
+            <input type="checkbox" checked />
+            <input type="checkbox" />
+            <input type="checkbox" />
+
+            <!-- 선택박스, 콤보박스 -->
+            <!-- 선택할 수 있는 보기 제시, 직접작성 실수를 방지 -->
+            <select>
+                <option>웹사이트</option>
+                <option>www.naver.com</option>
+                <option>www.goole.com</option>
+            </select>
+            <!-- 여러줄의 문자열을 받음 -->
+            <textarea cols="30" rows="5">
+
+            </textarea>
+            <input type="button" value="버튼" />
+            <input type="button" name="테스트 버튼" onclick="alert('테스트 버튼이 눌렸습니다.');" />
+            <input type="submit" value="제출" />
         </form>
     </body>
 </html>
