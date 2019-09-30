@@ -79,5 +79,42 @@
         }
         </style>
         <a href="#">링크 버튼</a>
+        <style>
+            #boxmodel1{
+                background-color: #dddddd;
+                width: 100px;
+                height: 200px;
+                margin: 100px; /* 바깥 여백 */
+                padding: 100px; /* 안쪽 여백 */
+                border: solid 1px black; /* 경계 */
+                /* 선종류 선두께 선색깔 */
+            }
+        </style>
+        <div id="boxmodel1">박스모델</div>
+        인라인태그
+
+        <style>
+            /* 하위 요소 선택자, 띄어쓰기 */
+            div li{
+                color: coral
+            }
+            /* 자식 요소 선택자, > 부등호 기호 */
+            div>ul>li{
+                text-decoration: underline;
+            }
+            /* 선택자 그룹화, 쉼표 */
+            div,ul,li{
+                color: blueviolet;
+            }
+        </style>
+        <div style="color: blue">
+            container
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+            </ul>
+        </div>
     </body>
 </html>
