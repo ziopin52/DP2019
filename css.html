@@ -105,7 +105,12 @@
             /* 선택자 그룹화, 쉼표 */
             div,ul,li{
                 color: blueviolet;
-            }
+                /* 16진수, 0~9, A~F */
+                color: #000; /* 세자리 컬러코드 #rgb */
+                color: #000000; /* 6자리 컬러코드 #rrggbb */
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%);
+                } 
         </style>
         <div style="color: blue">
             container
@@ -115,6 +120,97 @@
                 <li>리스트3</li>
                 <li>리스트4</li>
             </ul>
+        </div>
+
+        <style>
+            .position_test{
+                background-color: #ddd;
+                /* static 정적인(기본) */
+                position: static;
+                /* absolute 절대적인 */
+                /* top, left, right, bottom 위치 조정 가능 */
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                /* 고정된 */
+                position: fixed;
+            }
+        </style>
+        <div class="position_test">
+            position_test
+        </div>
+        <style>
+            .font_test{
+                font-family: Arial, Helvetica, sans-serif;
+                /* small, large, medium */
+                font-size: 10px;
+                /* normal, bold, bolder */
+                font-weight: bold;
+                /* normal, italic, oblique */
+                font-style: italic;
+                /* normal, small-caps */
+                font-variant: small-caps;
+                /* left, center, right */
+                /*  inline 요소에만 적용됨 */
+                text-align: center;
+
+                height: 150px;
+                background-color: #ddd;
+                /* none, underline, overflow, line-through */
+                text-decoration: underline;
+            }
+        </style>
+
+        <div class="font_test">
+            Container Font_Test
+            <img src="../DP2019/images/dog_01_01.jpg" width="50px">
+        </div>
+
+        <style>
+            .letter_line{
+                /* 글자 사이의 간격 */
+                letter-spacing: 10px;
+                /* 줄 간격 */
+                line-height: 30px;
+                /* 들여쓰기 */
+                text-indent: 50px;
+            }
+        </style>
+
+        <div class="letter_line">
+            제 11회 설화달맞이축제한해의 시작인 명절 정월대보름을 맞이하여 함께 나누고 즐기며 정통을 계승발전하고 우리민족 문화의 우수성을 젊은 세대들에게 일깨우고자 제 11회 설화달맞이 축제를 개최합니다.
+            가족과 함께 오셔서 민속놀이 체험도 즐기면서 즐겁고 뜻깊은 시간이 되시길 바랍니다.
+            설화달맞이축제 추진위원회 일동
+            2015. 3. 4(수) 오후 1시 ~ 7시
+            좌부1통 좌부교 옆
+                
+        </div>
+
+        <style>
+        .text-transform{
+            /* normal: 일반
+            uppercase: 대문자로
+            lowercase: 소문자로
+            capitalize: 첫글자 대문자
+            inheit */
+            text-transform: lowercase;
+        }
+        </style>
+
+        <div class="text-transform">
+            AbCDeFg
+        </div>
+
+        <style>
+        .pre{
+            white-space: pre
+        }
+        </style>
+        <!-- &nbsp; 띄어쓰기, <br/>줄내림 -->
+        
+        <div class="pre">
+            1 2 3     4 5 6 
+            7 8 9 0
         </div>
     </body>
 </html>
