@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout1</title>
+        <meta charset="utf-8">
+        <style>
+            header, nav, div, footer, h1, h2, ul, li, section{
+                /* border: solid 1px black; */
+                /* 경계: 실선 1픽셀두께 검은색 */
+                /* margin: 50px; */
+                /* 바깥여백: 50픽셀 */
+            }
+            header>ul>li{
+                float: left;
+                /* 왼쪽으로 겹치듯 믈 흐르듯이  */
+                list-style: none;
+                /* li 표시 없어짐 */
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px gray;
+                /* 경계션 - 오른쪽: 실선 2픽셀, 회섹 */
+            }
+            .clear{
+                clear: both; height: 0; overflow: hidden;
+            }
+            header>ul>li:nth-child(5){
+                border: none;
+                /* li의 마지막 선택 */
+            }
+            .float_left{float: left;}
+            .float_right{float: right;}
+            header>ul{
+                padding: 0;
+                margin-left: 200px;
+                margin-right: 200px;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
+            h1{margin: 0;}
+            h2{margin: 12px;}
+
+            #zoom{
+                margin: 10px;
+            }
+            #navigation li{
+                float: left;
+                list-style: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            #navigation{
+                background-color: #eee;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1 class="float_left">
+                    <a href="#">
+                        <img src="../DP2019/images/layout1_head_logo.jpg">
+                    </a>
+                </h1>
+                <!-- 제목 -->
+                <ul class="float_left">
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class="clear"></div>
+                </ul> 
+                <div id="zoom" class="float_right">
+                    <img src="../DP2019/images/layout1_head_zoom.jpg">
+                </div>
+
+                <div class="clear"></div>
+            </header>
+            <nav id="navigation">
+                <h2 class="float_left">See Our Works</h2>
+                <ul class="float_right">
+                    <li>Web Design</li>
+                    <li>Icons</li>
+                    <li>Illustration</li>
+                    <li>Misc</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+            <div>
+                <section>
+                    <div>
+                        <h3>Web design</h3>
+                        <div>
+                            <img src="../DP2019/images/layout1_img1.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="../DP2019/images/layout1_img2.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Web design</h3>
+                        <div>
+                            <img src="../DP2019/images/layout1_img3.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="../DP2019/images/layout1_img4.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                        <div>
+                            <h3>Web design</h3>
+                            <div>
+                                <img src="../DP2019/images/layout1_img5.jpg">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                        Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                        at massa eget orci porttitor semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                        <div>
+                                <img src="../DP2019/images/layout1_img6.jpg">
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                        Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                        at massa eget orci porttitor semper.
+                                    </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <h3>Web design</h3>
+                                <div>
+                                    <img src="../DP2019/images/layout1_img7.jpg">
+                                    <dl>
+                                        <dt>Lorem ipsum dolor sit amet</dt>
+                                        <dd>
+                                            Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                            Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                            at massa eget orci porttitor semper.
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <img src="../DP2019/images/layout1_img8.jpg">
+                                    <dl>
+                                        <dt>Lorem ipsum dolor sit amet</dt>
+                                        <dd>
+                                            Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                            Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                            at massa eget orci porttitor semper.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </section>
+            </div>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
