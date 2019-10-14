@@ -4,7 +4,13 @@
         <title>Layout1</title>
         <meta charset="utf-8">
         <style>
-            header, nav, div, footer, h1, h2, ul, li, section{
+            #wrap{
+                min-width: 1100px;
+                /* 최소 넓이 */
+                max-width: 1920px;
+                /* 최대 넓이 */
+            }
+            header,nav,div,footer,h1,h2,ul,li,section{
                 /* border: solid 1px black; */
                 /* 경계: 실선 1픽셀두께 검은색 */
                 /* margin: 50px; */
@@ -51,7 +57,82 @@
             #navigation{
                 background-color: #eee;
             }
-            
+            dd{
+                margin: 0;
+            }
+            dt{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-weight: bold;
+            }
+            div>section:nth-child(1){
+                background-color: #98f;
+            }
+            div>section:nth-child(2){
+                background-color: #5d9;
+            }
+            div>section:nth-child(3){
+                background-color: #f76;
+            }
+            div>section:nth-child(4){
+                background-color: #ec5;
+            }
+            div>section h3{
+                color: white;
+                margin-top: 45px;
+                margin-bottom: 45px;
+            }
+            div>section{
+                padding: 50px;
+            }
+            .content_part{
+                width: 480px;
+                float: left;
+                /* 왼쪽 기준으로 둥둥 떠있게 */
+                margin: 10px;
+            }
+            div>section{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                /* 블록형 태그의 가운데 정렬법 */
+            }
+            footer ul{
+                padding: 0;
+            }
+            footer ul>li{
+                list-style: none;
+                float: left;
+            }
+            /* footer>ul:nth-child(1)>li{
+                margin-left: 10px;
+                margin-right: 10px;
+            } */
+            #footer_div{
+                float: left;
+            }
+            #footer2{
+                float: right;
+            }
+            #footer1>li{
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 1px #aaa;
+            }
+            #footer2>li{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            #footer1>li:nth-child(6){
+                border: none;
+            }
+            footer{
+                background-color: #333;
+                color: #aaa;
+            }
+            #footer_div{
+                float: left;
+            }
         </style>
     </head>
     <body>
@@ -93,7 +174,7 @@
                 <section>
                     <div>
                         <h3>Web design</h3>
-                        <div>
+                        <div class="content_part">
                             <img src="../DP2019/images/layout1_img1.jpg">
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -104,7 +185,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div>
+                        <div class="content_part">
                             <img src="../DP2019/images/layout1_img2.jpg">
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -115,12 +196,13 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </div>
                 </section>
                 <section>
                     <div>
                         <h3>Web design</h3>
-                        <div>
+                        <div class="content_part">
                             <img src="../DP2019/images/layout1_img3.jpg">
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -131,7 +213,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div>
+                        <div class="content_part">
                             <img src="../DP2019/images/layout1_img4.jpg">
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -142,64 +224,91 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </div>
                 </section>
                 <section>
-                        <div>
-                            <h3>Web design</h3>
-                            <div>
-                                <img src="../DP2019/images/layout1_img5.jpg">
-                                <dl>
-                                    <dt>Lorem ipsum dolor sit amet</dt>
-                                    <dd>
-                                        Consectetur adipiscing elit. Suspendisse sed leo tellus.
-                                        Praesent nec vehicula ligula, non laoreet ligula. Maecenas
-                                        at massa eget orci porttitor semper.
-                                    </dd>
-                                </dl>
-                            </div>
-                        <div>
-                                <img src="../DP2019/images/layout1_img6.jpg">
-                                <dl>
-                                    <dt>Lorem ipsum dolor sit amet</dt>
-                                    <dd>
-                                        Consectetur adipiscing elit. Suspendisse sed leo tellus.
-                                        Praesent nec vehicula ligula, non laoreet ligula. Maecenas
-                                        at massa eget orci porttitor semper.
-                                    </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <div>
-                                <h3>Web design</h3>
-                                <div>
-                                    <img src="../DP2019/images/layout1_img7.jpg">
-                                    <dl>
-                                        <dt>Lorem ipsum dolor sit amet</dt>
-                                        <dd>
-                                            Consectetur adipiscing elit. Suspendisse sed leo tellus.
-                                            Praesent nec vehicula ligula, non laoreet ligula. Maecenas
-                                            at massa eget orci porttitor semper.
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <div>
-                                    <img src="../DP2019/images/layout1_img8.jpg">
-                                    <dl>
-                                        <dt>Lorem ipsum dolor sit amet</dt>
-                                        <dd>
-                                            Consectetur adipiscing elit. Suspendisse sed leo tellus.
-                                            Praesent nec vehicula ligula, non laoreet ligula. Maecenas
-                                            at massa eget orci porttitor semper.
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </section>
+                    <div>
+                        <h3>Web design</h3>
+                        <div class="content_part">
+                            <img src="../DP2019/images/layout1_img5.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <img src="../DP2019/images/layout1_img6.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3>Web design</h3>
+                        <div class="content_part">
+                            <img src="../DP2019/images/layout1_img7.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <img src="../DP2019/images/layout1_img8.jpg">
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit. Suspendisse sed leo tellus.
+                                    Praesent nec vehicula ligula, non laoreet ligula. Maecenas
+                                    at massa eget orci porttitor semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div id="footer_div">
+                    <ul id="footer1">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Service</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+                    <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+                </div>
+                <ul id="footer2">
+                    <li><img src="images/layout1_footer_icon1.png"></li>
+                    <li><img src="images/layout1_footer_icon2.png"></li>
+                    <li><img src="images/layout1_footer_icon3.png"></li>
+                    <li><img src="images/layout1_footer_icon4.png"></li>
+                    <li><img src="images/layout1_footer_icon5.png"></li>
+                    <li><img src="images/layout1_footer_icon6.png"></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
