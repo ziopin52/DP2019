@@ -4,10 +4,13 @@
         <title>layout2</title>
         <meta charset="utf-8" />
         <style>
+            body{margin: 0;}
             header{
                 background-color: #02918c;
                 color: white;
                 /* 글씨 색깔은 상속됩니다 */
+                padding: 10px 50px;
+                /* 상하 좌우 */
             }
             header>h1>span:nth-child(2){
                 color: #cfc91d;
@@ -78,14 +81,52 @@
             }
             section>p{
                 width: 650px;
-                margin: 0 auto;
+                margin: 30px auto;
                 /* 상하 좌우 */
             }
-            section>ul>li{
+            section>#about_list>li{
                 float: left;
                 width: 25%;
+                width: calc(25% - (1px / 4 * 3) - 50px - 50px);
+                /* 넓이를 계산 */
+                /* 4칸 3줄 */
                 list-style: none;
                 /* 1/4 크기로 4개로 나눔 */
+                border-right: solid 1px #ccc;
+                padding: 50px;
+            }
+            section>#about_list{
+                padding: 0;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            section dd{
+                margin-left: 0;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+                /* 마지막 선 삭제 */
+            }
+            section>#work_list>li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            section>#work_list>li>img{
+                /* display: inline;  */
+                /* img 태그의 기본 모습 - 인라인형 */
+                display: block;
+                /* 블록형 모습으로 변경 */
+                width: 100%;
+            }
+            section>#work_list{
+                padding: 0;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
             }
         </style>
     </head>
@@ -121,7 +162,7 @@
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat duis aute irure dolor.
                 </p>
-                <ul>
+                <ul id="about_list">
                     <li>
                         <img src="images/layout2_icon1.jpg" />
                         <dl>
@@ -169,7 +210,25 @@
                 </ul>
                 <div class="clear"></div>
             </section>
-            <section>content2</section>
+            <section>
+                <h3>MY WORK</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat duis aute irure dolor.
+                </p>
+                <ul id="work_list">
+                    <li><img src="images/layout2_pic1.jpg" /></li>
+                    <li><img src="images/layout2_pic2.jpg" /></li>
+                    <li><img src="images/layout2_pic3.jpg" /></li>
+                    <li><img src="images/layout2_pic4.jpg" /></li>
+                    <li><img src="images/layout2_pic5.jpg" /></li>
+                    <li><img src="images/layout2_pic6.jpg" /></li>
+                    <li><img src="images/layout2_pic7.jpg" /></li>
+                    <li><img src="images/layout2_pic8.jpg" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
         </div>
     </body>
 </html>
