@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <title>responsive web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+        .col-1 {width: calc(100% / 12);}
+        .col-2 {width: calc(100% / 6);}
+        .col-3 {width: calc(100% / 4);}
+        .col-4 {width: calc(100% / 3);}
+        .col-6 {width: calc(100% / 2);}
+        .col-12 {width: calc(100% / 1);}
+        [class*="col-"] {
+        float: left;
+        }
+        body div:nth-child(1){ background-color: #333;}
+        body div:nth-child(2){ background-color: #666;}
+        body div:nth-child(3){ background-color: #999;}
+        body div:nth-child(4){ background-color: #aaa;}
+        body div:nth-child(5){ background-color: #ccc;}
+        body div:nth-child(6){ background-color: #ddd;}
+
+            /*
+				모바일 320px ~ 767px
+				타블렛 768px ~ 1023px or 1199px
+				PC 1200px 이상 or 1024px 이상
+			*/
+			body{background-color: green;}
+			@media screen and (max-width: 1920px) {
+                /* 스크린의 크기가 1920px를 넘지 않는다먄 */
+  				body{background-color: blue;}
+			}
+			@media screen and (max-width: 1023px){
+                /* 스크린의 크기가 1023px를 넘지 않는다먄 */
+				body{background-color: red;}
+			}
+			@media screen and (max-width: 767px){
+                /* 스크린의 크기가 767px를 넘지 않는다먄 */
+				body{background-color: yellow;}
+			}
+    </style>
+</head>
+<body>
+    <a href="index.html">뒤로가기</a>
+    <div class="row">
+        <div class="col-1">col-1</div>
+        <div class="col-2">col-2</div>
+        <div class="col-3">col-3</div>
+        <div class="col-4">col-4</div>
+        <div class="col-6">col-6</div>
+        <div class="col-12">col-12</div>
+    </div>
+</body>
+</html>
