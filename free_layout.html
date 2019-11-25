@@ -39,13 +39,13 @@
             margin-top: 0;
             margin-left: 10px;
         }
-        #work_list>li{
+        .work_list>li{
             width: 25%;
             float: left;
             list-style: none;
             padding: 0;
         }
-        #work_list>li img{
+        .work_list>li img{
             width: 100%;
             display: block;
         }
@@ -57,7 +57,11 @@
             color: white;
         }
         div>.nature_picture{
-            height: 200px;
+            height: 220px;
+            overflow: hidden;
+        }
+        div>.city_picture{
+            height: 220px;
             overflow: hidden;
         }
         .new_main_visual>p{
@@ -66,8 +70,29 @@
         .new_main_visual>h2{
             font-size: 35px;
         }
-        #work_list{
+        .work_list{
             padding: 0;
+        }
+        .nature_picture>h3{
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .city_picture>h3{
+            font-weight: normal;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .category>li{
+            float: left;
+            list-style: none;
+            font-size: 12px;
+            color: #666;
+            padding-right: 20px;
+        }
+        .category{
+            margin: 0 auto;
+            float: right;
         }
     </style>
     <body>
@@ -77,8 +102,8 @@
                 <ul>
                     <li>자연사진</li>
                     <li>도시사진</li>
-                    <li>인물사진</li>
                     <li>기타사진</li>
+                    <li>사진업로드</li>
                     <div class="clear"></div>
                 </ul>
             </nav>
@@ -92,16 +117,61 @@
             </div>
             <div class="nature_picture">
                 <h3>자연사진</h3>
-                <ul id="work_list">
-                    <li class="picture_information"><img src="images/free_layout_picture_001.jpg" /></li>
-                    <li class="picture_information"><img src="images/free_layout_picture_002.jpeg" /></li>
-                    <li class="picture_information"><img src="images/free_layout_picture_003.jpg" /></li>
+                <ul class="category">
+                    <li>국내사진</li>
+                    <li>해외사진</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+                <ul class="work_list">
+                    <li><img src="images/free_layout_picture_001.jpg" /></li>
+                    <li><img src="images/free_layout_picture_002.jpeg" /></li>
+                    <li><img src="images/free_layout_picture_003.jpg" /></li>
                     <li><img src="images/free_layout_picture_004.png" /></li>
                     <div class="clear"></div>
                 </ul>
             </div>
+            <div class="city_picture">
+                    <h3>도시사진</h3>
+                    <ul class="category">
+                        <li>국내사진</li>
+                        <li>해외사진</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="clear"></div>
+                    <ul class="work_list">
+                        <li><img src="images/free_layout_picture_005.jpg" /></li>
+                        <li><img src="images/free_layout_picture_006.png" /></li>
+                        <li><img src="images/free_layout_picture_007.png" /></li>
+                        <li><img src="images/free_layout_picture_008.png" /></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
         </div>
         <footer>
+            <div id="footer_div">
+                <ul id="footer1">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Service</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                    <div class="clear"></div>
+                </ul>
+                <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+                <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+            </div>
+            <ul id="footer2">
+                <li><img src="images/layout1_footer_icon1.png"></li>
+                <li><img src="images/layout1_footer_icon2.png"></li>
+                <li><img src="images/layout1_footer_icon3.png"></li>
+                <li><img src="images/layout1_footer_icon4.png"></li>
+                <li><img src="images/layout1_footer_icon5.png"></li>
+                <li><img src="images/layout1_footer_icon6.png"></li>
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
             <a href="index.html">뒤로가기</a>
         </footer>
 
