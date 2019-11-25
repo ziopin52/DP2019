@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>풍경갤러리</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    </head>
+    <style>
+        .clear{
+            clear: both;
+            height: 0;
+            overflow: hidden;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: rgb(35, 102, 190);
+            padding-top: 20px;
+            padding-bottom: 10px;
+            color: white;
+        }
+        nav>ul>li{
+            float: left;
+            font-size: 15px;
+            padding-right: 40px;
+            list-style: none;
+            margin-right: 20px;
+        }
+        nav>ul{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        header>nav{
+            float: right;
+        }
+        header>h1{
+            margin-bottom: 10px;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        #work_list>li{
+            width: 25%;
+            float: left;
+            list-style: none;
+            padding: 0;
+        }
+        #work_list>li img{
+            width: 100%;
+            display: block;
+        }
+        .new_main_visual{
+            background-image: url("images/free_layout_picture_001.jpg");
+            background-size: cover;
+            text-align: center; 
+            padding: 200px 0;
+            color: white;
+        }
+        div>.nature_picture{
+            height: 200px;
+            overflow: hidden;
+        }
+        .new_main_visual>p{
+            font-size: 20px;
+        }
+        .new_main_visual>h2{
+            font-size: 35px;
+        }
+        #work_list{
+            padding: 0;
+        }
+    </style>
+    <body>
+        <header>
+            <h1>풍경갤러리</h1>
+            <nav>
+                <ul>
+                    <li>자연사진</li>
+                    <li>도시사진</li>
+                    <li>인물사진</li>
+                    <li>기타사진</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <div class="content">
+            <div class="new_main_visual">
+                <div class="main_visual_"></div>
+                <h2>신규 이미지</h2>
+                <p>더 보러 가기</p>
+            </div>
+            <div class="nature_picture">
+                <h3>자연사진</h3>
+                <ul id="work_list">
+                    <li class="picture_information"><img src="images/free_layout_picture_001.jpg" /></li>
+                    <li class="picture_information"><img src="images/free_layout_picture_002.jpeg" /></li>
+                    <li class="picture_information"><img src="images/free_layout_picture_003.jpg" /></li>
+                    <li><img src="images/free_layout_picture_004.png" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <a href="index.html">뒤로가기</a>
+        </footer>
+
+    </body>
+</html>
