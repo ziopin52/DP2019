@@ -4,121 +4,8 @@
         <title>풍경갤러리</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <style>
-        .clear{
-            clear: both;
-            height: 0;
-            overflow: hidden;
-        }
-        body{
-            margin: 0;
-        }
-        header{
-            background-color: rgb(35, 102, 190);
-            padding-top: 20px;
-            padding-bottom: 10px;
-            color: white;
-        }
-        nav>ul>li{
-            float: left;
-            font-size: 15px;
-            padding-right: 40px;
-            list-style: none;
-            margin-right: 20px;
-        }
-        nav>ul{
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        header>nav{
-            float: right;
-        }
-        header>h1{
-            margin-bottom: 10px;
-            margin-top: 0;
-            margin-left: 10px;
-        }
-        .work_list>li{
-            width: 25%;
-            float: left;
-            list-style: none;
-            padding: 0;
-        }
-        .work_list>li img{
-            width: 100%;
-            display: block;
-        }
-        .new_main_visual{
-            background-image: url("images/free_layout_picture_001.jpg");
-            background-size: cover;
-            text-align: center; 
-            padding: 200px 0;
-            color: white;
-        }
-        div>.nature_picture{
-            height: 220px;
-            overflow: hidden;
-        }
-        div>.city_picture{
-            height: 220px;
-            overflow: hidden;
-        }
-        .new_main_visual>p{
-            font-size: 20px;
-        }
-        .new_main_visual>h2{
-            font-size: 35px;
-        }
-        .work_list{
-            padding: 0;
-        }
-        .nature_picture>h3{
-            font-weight: normal;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .city_picture>h3{
-            font-weight: normal;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .category>li{
-            float: left;
-            list-style: none;
-            font-size: 12px;
-            color: #666;
-            padding-right: 20px;
-        }
-        .category{
-            margin: 0 auto;
-            float: right;
-        }
-        /* #footer_div{
-                float: left;
-            }
-            #footer2{
-                float: right;
-            }
-            #footer1>li{
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            #footer2>li{
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-            #footer1>li:nth-child(6){
-                border: none;
-            }
-            footer{
-                background-color: #333;
-                color: #aaa;
-            }
-            #footer_div{
-                float: left;
-            } */
-    </style>
     <body>
         <header>
             <h1>풍경갤러리</h1>
@@ -127,7 +14,10 @@
                     <li>자연사진</li>
                     <li>도시사진</li>
                     <li>기타사진</li>
-                    <li>사진업로드</li>
+                    <li>자연그림</li>
+                    <li>도시그림</li>
+                    <li>기타그림</li>
+                    <li>사진/그림업로드</li>
                     <div class="clear"></div>
                 </ul>
             </nav>
@@ -147,40 +37,83 @@
                     <div class="clear"></div>
                 </ul>
                 <div class="clear"></div>
-                <ul class="work_list">
+                <ul class="work_list1">
                     <li><img src="images/free_layout_picture_001.jpg" /></li>
                     <li><img src="images/free_layout_picture_002.jpeg" /></li>
+                    <div class="clear"></div>
+                </ul>
+                <ul class="work_list2">
                     <li><img src="images/free_layout_picture_003.jpg" /></li>
-                    <li><img src="images/free_layout_picture_004.png" /></li>
+                    <li><img src="images/free_layout_picture_004.jpg" /></li>
+                    <div class="clear"></div>
+                </ul>
+                
+            </div>
+            <div class="city_picture">
+                <h3>도시사진</h3>
+                <ul class="category">
+                    <li>국내사진</li>
+                    <li>해외사진</li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+                <ul class="work_list1">
+                    <li><img src="images/free_layout_picture_005.jpg" /></li>
+                    <li><img src="images/free_layout_picture_006.jpg" /></li>
+                    <div class="clear"></div>
+                </ul>
+                <ul class="work_list2">
+                    <li><img src="images/free_layout_picture_007.jpg" /></li>
+                    <li><img src="images/free_layout_picture_008.jpg" /></li>
                     <div class="clear"></div>
                 </ul>
             </div>
-            <div class="city_picture">
-                    <h3>도시사진</h3>
-                    <ul class="category">
-                        <li>국내사진</li>
-                        <li>해외사진</li>
-                        <div class="clear"></div>
+            <div class="theme">
+                <h3>테마사진/그림</h3>
+                <section>
+                    <ul>
+                        <h5>자연</h5>
+                        <li>산</li>
+                        <li>바다</li>
+                        <li>강</li>
+                        <li>초원</li>
+                        <li>기타</li>
                     </ul>
-                    <div class="clear"></div>
-                    <ul class="work_list">
-                        <li><img src="images/free_layout_picture_005.jpg" /></li>
-                        <li><img src="images/free_layout_picture_006.png" /></li>
-                        <li><img src="images/free_layout_picture_007.png" /></li>
-                        <li><img src="images/free_layout_picture_008.png" /></li>
-                        <div class="clear"></div>
+                </section>
+                <section>
+                    <ul>
+                        <h5>도시</h5>
+                        <li>현대거리</li>
+                        <li>현대건물</li>
+                        <li>옛날거리</li>
+                        <li>옛날건물</li>
+                        <li>기타</li>
                     </ul>
-                </div>
+                </section>
+                <div class="clear"></div>
+            </div>
+            <div class="upload">
+                <h3>사진/그림업로드</h3>
+                <section>
+                    <ul>
+                        <h5>업로드게시판</h5>
+                        <li>신규 이미지</li>
+                        <li>베스트 이미지</li>
+                        <li>맞춤 이미지</li>
+                    </ul>
+                </section>
+            </div>
         </div>
         <footer>
-            <!-- <div id="footer_div">
+            <div id="footer_div">
                 <ul id="footer1">
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Service</li>
-                    <li>Work</li>
-                    <li>Blog</li>
-                    <li>Contact us</li>
+                    <li>자연사진</li>
+                    <li>도시사진</li>
+                    <li>기타사진</li>
+                    <li>자연그림</li>
+                    <li>도시그림</li>
+                    <li>기타그림</li>
+                    <li>사진/그림업로드</li>
                     <div class="clear"></div>
                 </ul>
                 <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
@@ -195,7 +128,7 @@
                 <li><img src="images/layout1_footer_icon6.png"></li>
                 <div class="clear"></div>
             </ul>
-            <div class="clear"></div> -->
+            <div class="clear"></div>
             <a href="index.html">뒤로가기</a>
         </footer>
 
