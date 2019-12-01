@@ -94,6 +94,16 @@ header>h1{
     margin: 0 auto;
     float: right;
 }
+.theme{
+    background-color: #eee;
+}
+.upload{
+    background-color: #eee;
+}
+.upload h3{
+    margin-top: 0;
+    padding-left: 40px;
+}
 .theme>section>ul>li{
     list-style: none;
     font-size: 12px;
@@ -109,30 +119,29 @@ header>h1{
 }
 .theme>h3{
     padding-left: 40px;
+    padding-top: 40px;
 }
 .upload li{
     font-size: 12px;
     list-style: none;
+    padding-bottom: 25px;
+}
+.upload ul{
+    margin-bottom: 0;
 }
 #footer_div{
     float: left;
 }
-#footer2{
-    float: right;
-}
 #footer1>li{
     padding-left: 10px;
     padding-right: 10px;
-}
-#footer2>li{
-    margin-left: 5px;
-    margin-right: 5px;
 }
 #footer1>li:nth-child(6){
     border: none;
 }
 footer{
     color: #333333;
+    background-color: #eee;
 }
 #footer_div{
     float: left;
