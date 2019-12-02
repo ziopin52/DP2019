@@ -96,6 +96,7 @@ header>h1{
 }
 .theme{
     background-color: #eee;
+    float: left;
 }
 .upload{
     background-color: #eee;
