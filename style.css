@@ -94,16 +94,16 @@ header>h1{
     margin: 0 auto;
     float: right;
 }
+.menu{
+    background-color: #eee;
+}
 .theme{
     background-color: #eee;
     float: left;
-}
+} 
 .upload{
     background-color: #eee;
-}
-.upload h3{
-    margin-top: 0;
-    padding-left: 40px;
+    
 }
 .theme>section>ul>li{
     list-style: none;
@@ -119,6 +119,10 @@ header>h1{
     margin-right: 150px;
 }
 .theme>h3{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.upload>h3{
     padding-left: 40px;
     padding-top: 40px;
 }
