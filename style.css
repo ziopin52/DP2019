@@ -103,6 +103,7 @@ header>h1{
 } 
 .upload{
     background-color: #eee;
+    float: left;
     
 }
 .theme>section>ul>li{
@@ -112,11 +113,13 @@ header>h1{
 }
 .theme>section>ul>h5{
     margin-bottom: 25px;
-    margin-top: 25px;
 }
 .theme>section{
     float: left;
     margin-right: 150px;
+}
+.upload>section{
+    float: left;
 }
 .theme>h3{
     padding-left: 40px;

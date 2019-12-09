@@ -1,0 +1,168 @@
+<!-- html, css, javascript -->
+<script>alert('시작');</script>
+<!-- 호출 (특정 기능을 실행함) -->
+
+<button onclick="alert('클릭됨')">클릭</button>
+<button onmouseover="alert('마우스오버')">오버</button>
+
+<script>
+    function f1(){
+        alert('안녕하세요.');
+        alert('반갑습니다.');
+    }
+    // 함수의 선언 f1 = 함수의 이름
+    f1();
+    // 함수의 호출
+</script>
+<button onclick="f1()">인사</button>
+
+<script>
+    function f2(a,b,c){ // 인자를 받는 함수=변수의 선언
+        alert("합계:"+(a+b));
+    }
+    // f2(2,3);
+    // f2(4,5);
+    // 함수의 호출
+</script>
+<button onclick="f2(2,3)">2,3</button>
+<button onclick="f2(4,5)">4,5</button>
+
+<script>
+    function f3(a,b){
+        // 인자를 받고 리턴을 하는 함수의 선언
+        return (a+b)+"입니다.";
+    }
+        var str = f3(2,3);
+        // 함수의 호출 후 값을 담기
+        alert(str);
+        // 경고창에 출력하기
+</script>
+
+<script>
+    var a;
+    // 변수의 선언
+    // var(variable: 변수) a(마음대로 지은 이름)
+    // a라는 이름의 변수가 있습니다.
+    a = 10; // 변수에 값을 할당
+    var b;
+    b = "문자";
+</script>
+
+<div id="name_div">안녕하세요. 저는
+    <span id="name_span">김지오</span>
+    입니다.
+</div>
+
+<script>
+    function change_name(str){
+        var target_span = document.getElementById('name_span');
+        // 아이디를 이용하여 객체(object) 받아오기
+        target_span.innerHTML = str;
+        // 대상의 .html안쪽의 글 = "꾸꾸";
+}
+</script>
+<button onclick="change_name('꾸꾸')">꾸꾸로 이름 바꾸기</button>
+<button onclick="change_name('뚜뚜')">뚜뚜로 이름 바꾸기</button>
+
+<style>
+    .red_text{
+        color: red;
+    }
+    #red_div{
+        transition: color 1s;
+        /* 중간모양 : 글씨색깔 1초동안 변화한다 */
+    }
+</style>
+<script>
+    function text_color(){
+        var target_div = document.getElementById("red_div");
+        // 대상 찾기
+        target_div.classList.toggle("red_text");
+        // 대상.클래스목록.변경
+    }
+</script>
+<div id="red_div" class="red_text" onclick="text_color()">글씨</div>
+
+<style>
+    #b_red{
+        background-color: red;
+    }
+    #b_blue{
+        background-color: blue;
+    }
+    #b_yellow{
+        background-color: yellow;
+    }
+    #b_green{
+        background-color: green;
+    }
+    [id*="b_"]{
+        width: 25%;
+        height: 200px;
+        float: left;
+    }
+    #container{
+        width: 400%;
+        position: absolute;
+        transition: left 0.5s;
+    }
+    .m_0{ left: 0% }
+    .m_1{ left: -100% }
+    .m_2{ left: -200% }
+    .m_3{ left: -300% }
+    #frame{
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .clear{
+        clear: both;
+        height: 0px;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+        var save_idx = 0;
+        function change_con(idx){
+            save_idx = idx;
+            var target = document.getElementById("container");
+            // 대상 찾기
+            target.classList = ""
+            // 클래스 삭제
+            target.classList.add("m_"+idx);
+            // 클래스 지정
+        }
+</script>
+<div id="frame">
+    <div id="container" class="m_0">
+        <div id="b_red">content1</div>
+        <div id="b_blue">content2</div>
+        <div id="b_yellow">content3</div>
+        <div id="b_green">content4</div>
+        <div class="clear"></div>
+    </div>
+</div>
+<button onclick="change_con(0)">content1</button>
+<button onclick="change_con(1)">content2</button>
+<button onclick="change_con(2)">content3</button>
+<button onclick="change_con(3)">content4</button>
+<script>
+    function left_con(){
+        // 왼쪽 버튼을 누르면
+        if(save_idx > 0){
+            save_idx --;
+            // 숫자가 줄어든다
+            change_con(save_idx);
+            // 숫자에 맞추어 페이지 이동
+        }
+    }
+    function right_con(){
+        if(save_idx < 3){
+            save_idx ++;
+            change_con(save_idx);
+        }
+    }
+</script>
+<button onclick="left_con()">go left</button>
+<button onclick="right_con()">go right</button>
